@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-AT">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -20,6 +20,7 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    {% block content %}{% endblock %} {{ bootstrap.load_js() }}
+    {% block content %}{% endblock %} {{ bootstrap.load_js() }} {% block scripts
+    %}{% endblock %}
   </body>
 </html>
